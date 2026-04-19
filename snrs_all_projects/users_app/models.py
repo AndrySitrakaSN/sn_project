@@ -8,7 +8,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     # =========================
     # 🔹 IDENTIFIANT LOGIN
     # =========================
-    email = models.EmailField(unique=True)
+    # email = models.EmailField(unique=True)
+    email = models.EmailField(unique=True, max_length=191)
+
 
     # =========================
     # 🔹 INFOS UTILISATEUR
